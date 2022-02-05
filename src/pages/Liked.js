@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 
-import image from "../assets/image/dummy-image.jpg";
-
 const Liked = () => {
   const { likedMovies, setLikedMovies } = useAuth();
 

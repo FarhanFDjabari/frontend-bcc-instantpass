@@ -14,7 +14,7 @@ const Navbar = ({ movies, getSearchData }) => {
   }
 
   return (
-    <nav className="sticky z-10 top-0 left-0 bg-navbar w-full shadow">
+    <nav className="md:sticky z-10 top-0 left-0 bg-navbar w-full shadow">
       <div className="container m-auto flex justify-between items-center text-gray-100 transition duration-300">
         <Link
           to="/"

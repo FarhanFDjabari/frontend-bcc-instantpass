@@ -45,9 +45,9 @@ const MovieDetail = () => {
   }, []);
 
   return (
-    <div className="grid h-full w-full bg-bgUtama justify-center py-24">
-      <div className="flex flex-row justify-self-center md:p-12 h-3/4 md:w-11/12 bg-detailMovie rounded-sm shadow-2xl text-blue-50">
-        <div className="md:basis-1/2 flex flex-col p-12 gap-6">
+    <div className="grid h-full w-full bg-bgUtama justify-center py-12 md:py-24">
+      <div className="flex flex-col md:flex-row justify-self-center md:p-12 md:h-3/4 md:w-11/12 md:bg-detailMovie rounded-lg md:shadow-2xl text-blue-50">
+        <div className="md:basis-1/2 flex flex-col p-4 md:p-12 gap-6">
           <div className="content">
             <div className="grid gap-4 content-center">
               <h1 className="grid-cols-2 text-3xl font-bold">{movie.title}</h1>
@@ -80,19 +80,21 @@ const MovieDetail = () => {
             <p className="w-11/12 font-semibold">{movie.overview}</p>
           </div>
         </div>
-        <div className="hidden md:grid basis-1/2 justify-center items-center">
-          {urls &&
-            urls
-              .filter((url) => url.type === "Trailer")
-              .slice(0, 1)
-              .map((url, idx) => (
-                <ReactPlayer
-                  className="h-full rounded-lg"
-                  id={idx}
-                  url={`https://www.youtube.com/watch?v=${url.key}`}
-                />
-              ))}
-        </div>
+        {urls &&
+          urls
+            .filter((url) => url.type === "Trailer")
+            .slice(0, 1)
+            .map((url, idx) => (
+              <ReactPlayer
+                className="order-first md:order-none basis-1/2 justify-center items-center"
+                width="100%"
+                // height="100%"
+                controls={true}
+                id={idx}
+                url={`https://www.youtube.com/watch?v=${url.key}`}
+              />
+            ))}
+        {/* <div className="order-first md:grid basis-1/2 justify-center items-center"></div> */}
       </div>
     </div>
   );
