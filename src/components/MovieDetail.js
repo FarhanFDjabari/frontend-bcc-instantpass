@@ -1,13 +1,16 @@
+import _ from "lodash";
 import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player/lazy";
 import { useParams } from "react-router-dom";
 import { MOVIE_GET_DETAIL, MOVIE_GET_URL } from "../api";
+import useAuth from "../hooks/useAuth";
 
-const MovieDetail = ({ likedMovies, setLikedMovies }) => {
+const MovieDetail = () => {
   const [movie, setMovie] = useState({});
   const [urls, setUrls] = useState([]);
   const [pg, setPg] = useState(true);
   const { id } = useParams();
+  const { setLikedMovies, likedMovies } = useAuth();
 
   if (movie.adult) {
     setPg(false);
@@ -27,7 +30,7 @@ const MovieDetail = ({ likedMovies, setLikedMovies }) => {
 
   const addFavorite = () => {
     if (likedMovies.indexOf(id) == -1) {
-      setLikedMovies([...likedMovies, id]);
+      setLikedMovies(_.uniqBy([...likedMovies, movie], "id"));
       // localStorage.setItem(
       //   `liked_movies_${likedMovies.indexOf(id)}`,
       //   likedMovies[likedMovies.indexOf(id)].toString()
