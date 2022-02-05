@@ -77,7 +77,7 @@ const MovieDetail = () => {
             <p className="text-xl font-bold">
               Release Date : {movie.release_date} - {pg && "Parental Guidance"}
             </p>
-            <p className="w-11/12 font-semibold">{movie.overview}</p>
+            <p className="md:w-11/12 font-semibold">{movie.overview}</p>
           </div>
         </div>
         {urls &&
