@@ -1,76 +1,70 @@
-# Frontend Instant Pass Challenge
+# Getting Started with Create React App
 
-## :love_letter: Invitation Letter
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Hello everyone, we are from the Frontend (FE) department hold a Free Pass route for those of you who want to enter the FE department. There are 2 ways to pass this path, the first is to complete one of the submission challenge listed below (Web/Multi Platform). Another way is to do a pull request (PR) on the BCC design system project which is found in the following [link](https://github.com/bccfilkom/designsystem)
+## Available Scripts
 
-## :star::computer: Challenge (Web)
+In the project directory, you can run:
 
-Make a simple web application by implementing the features below:
+### `npm start`
 
-* Implementasi Framework/libraries JS.
-* Implementasi penggunaan API.
-* Implementasi State management.
-* Implementasi Responsive Web.
-* Desain dari Aplikasi tidak wajib merupakan desain sendiri, boleh mengambil referensi dari internet/pihak lain.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## :star::iphone: Challenge (Multi Platform - Flutter)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Make a simple Mobile application by implementing the features below:
- 
-* Aplikasi dapat melakukan operasi CRUD (create, read, update, delete).
-* Implementasi penyimpanan lokal.
-* Implementasi penggunaan state management.
-* Implementasi penggunaan API.
-* Implementasi Testing.
-* Desain dari Aplikasi tidak wajib merupakan desain sendiri, boleh mengambil referensi dari internet/pihak lain.
+### `npm test`
 
-## :100: Bonus Point Advice
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-You can also apply the suggestions below to earn bonus points:
+### `npm run build`
 
-* Web
-   - Menambahkan Error Handling.
-   - Menambahkan animasi.
-   - Terdapat improvisasi fitur.
-   - Mendeploy website ke internet dan bisa diakses secara public.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-* Multi Platform - Flutter
-   - Menambahkan Error Handling.
-   - Menambahkan animasi.
-   - Terdapat improvisasi fitur.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## :blue_book: References
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-You might be overwhelmed by these requirements. Don't worry, let's see all the equipment you need down below:
+### `npm run eject`
 
-1. [Public API](https://github.com/public-apis/public-apis)
-2. Web Hosting Services
-    - [Vercel](https://vercel.com/)
-    - [Netlify](https://www.netlify.com/)
-3. [Dribbble](https://dribbble.com/)
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## :school_satchel: Task
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-1. Fork this repository
-2. Follow the project [Convention](CONVENTION.md)
-3. Finish all requirements
-4. Submit your work
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## :warning: Warning
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Challenges submitted **must be your own work**. Code obtained from other sources (websites, books, forums, GitHub, etc.) should **only be used for reference**.
+## Learn More
 
-## :question: Question
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Do you have any questions related to this challenge?? Feel free to contact me via [Telegram](https://t.me/farhanfdjabari)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## :gift: Submission
+### Code Splitting
 
-Please follow the instructions on the [Contributing guide](CONTRIBUTING.md).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-![good_luck](https://media.giphy.com/media/3gM9hmQeWBLVXXrxvJ/giphy-downsized-large.gif)
+### Analyzing the Bundle Size
 
-> **This is *not* the only way to join us.**
->
-> **Good Luck!**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
